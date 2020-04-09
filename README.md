@@ -28,6 +28,12 @@ The Chicago and New York City files also have the following two columns:
 Gender
 Birth Year
 
+### Files
+chicago.csv
+new_york_city.csv
+washington.csv
+bikeshare.py
+
 ### Questions explored
 The script answers the following questions about the bike share data:
 
