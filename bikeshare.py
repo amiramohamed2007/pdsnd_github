@@ -189,11 +189,11 @@ def user_stats(df, city):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-' * 70)
 def raw_data(df):
-    raw = input('Would you like to read some of the raw data? Yes/No ').lower()
+    raw = input('Would you like to read some of the raw data? Y/N ').lower()
     print()
-    if raw=='yes' :
+    if raw=='y' :
         raw=True
-    elif raw=='no' :
+    elif raw=='n' :
         raw=False
     else:
         print('You did not enter a valid choice. Let\'s try that again. ')
