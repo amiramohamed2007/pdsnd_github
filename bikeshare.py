@@ -117,7 +117,7 @@ def time_stats(df):
     print('Most Common Start Hour:', popular_common_start_hour)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-' * 60)
+    print('-' * 70)
 
 
 def station_stats(df):
@@ -142,7 +142,7 @@ def station_stats(df):
     print('Most frequent combination of Start Station and End Station trip:\n', popular_combination_station)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-' * 60)
+    print('-' * 70)
 
 
 def trip_duration_stats(df):
@@ -187,13 +187,13 @@ def user_stats(df, city):
         earliest_year = df['Birth Year'].min()
         print('Earliest Year:', earliest_year)
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-' * 60)
+    print('-' * 70)
 def raw_data(df):
-    raw = input('Would you like to read some of the raw data? Yes/No ').lower()
+    raw = input('Would you like to read some of the raw data? Y/N ').lower()
     print()
-    if raw=='yes' :
+    if raw=='y' :
         raw=True
-    elif raw=='no' :
+    elif raw=='n' :
         raw=False
     else:
         print('You did not enter a valid choice. Let\'s try that again. ')
